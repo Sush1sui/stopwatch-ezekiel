@@ -72,14 +72,16 @@ function displayTime() {
   let minutes = time.minutes < 10 ? "0" + time.minutes : time.minutes;
   let seconds = time.seconds < 10 ? "0" + time.seconds : time.seconds;
 
-  hoursElement.innerHTML = `${hours}
-  <span class="mini-text">Hours</span>
-  `;
-  minutesElement.innerHTML = `${minutes}
-    <span class="mini-text">Minutes</span>
-  `;
-  secondsElement.innerHTML = `${seconds} 
-    <span class="mini-text">Seconds</span>
-  `;
+//   hoursElement.innerText = `${hours}
+//   <span class="mini-text">Hours</span>
+//   `;
+//   minutesElement.innerHTML = `${minutes}
+//     <span class="mini-text">Minutes</span>
+//   `;
+//   secondsElement.innerHTML = `${seconds} 
+//     <span class="mini-text">Seconds</span>
+//   `;
+    hoursElement.textContent = hours;
+    minutesElement.textContent = minutes;
+    secondsElement.textContent = seconds;
 }
-
